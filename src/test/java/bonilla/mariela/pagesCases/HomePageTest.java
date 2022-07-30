@@ -27,9 +27,10 @@ public class HomePageTest {
         adapter.findCssSelector((".btn-filter"));
         adapter.findTagName(("body"));
         adapter.findElementById(("DistrictId")).click();
+        adapter.findElementXpath(("//option[. = 'Guaitil']")).click();
         adapter.findElementById(("PropertyTypeId")).click();
         adapter.findElementById(("PropertyTypeId"));
-        adapter.findElementXpath(("//option[. = 'Guaitil']")).click();
+        adapter.findElementXpath(("//option[. = 'Vivienda']")).click();
         adapter.findElementById(("MinPrice")).click();
         adapter.findElementById(("MinPrice")).sendKeys("0");
         adapter.findElementById(("MaxPrice")).click();
@@ -37,5 +38,8 @@ public class HomePageTest {
         adapter.findCssSelector((".btn-filter")).click();
         adapter.findCssSelector((".property-item-title > strong")).click();
     }
+
+
+
 
 }
