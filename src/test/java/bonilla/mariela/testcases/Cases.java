@@ -34,6 +34,14 @@ public class Cases
         homePageTest.searchSanJose();
     }
 
+    @AfterMethod
+    public void afterTest() {
+    }
+    @AfterClass
+    public void afterClass() {
+        homePageTest.closeDriver();
+    }
+
 
 }
 
