@@ -22,4 +22,23 @@ public class Adapter {
 
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
     }
+
+    public void openURL(String url) {
+        driver.get(url);
+    }
+    public void closeDriver() {
+        driver.quit();
+    }
+    public WebElement findElementById(String id) {
+        return driver.findElement(By.id(id));
+    }
+    public WebElement findElementXpath(String element) {
+        return driver.findElement(By.xpath(element));
+    }
+    public  WebElement findCssSelector(String cssSelector) {
+        return driver.findElement(By.cssSelector(cssSelector));
+    }
+    public  WebElement findTagName(String tag) {
+        return driver.findElement(By.tagName(tag));
+    }
 }
