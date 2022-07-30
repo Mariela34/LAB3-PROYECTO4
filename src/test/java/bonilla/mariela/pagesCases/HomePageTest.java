@@ -59,6 +59,26 @@ public class HomePageTest {
         adapter.findCssSelector((".property-item-title > strong")).click();
     }
 
+    public void searchCartago()throws IOException {
+        adapter.findElementById(("ProvinceId")).click();
+        adapter.findElementXpath(("//option[. = 'Cartago']")).click();
+        adapter.findElementById(("CantonId")).click();
+        adapter.findElementById(("CantonId"));
+        adapter.findElementXpath(("//option[. = 'Alvarado']")).click();
+        adapter.findCssSelector((".btn-filter"));
+        adapter.findTagName(("body"));
+        adapter.findElementById(("DistrictId")).click();
+        adapter.findElementById(("PropertyTypeId")).click();
+        adapter.findElementById(("PropertyTypeId"));
+        adapter.findElementXpath(("//option[. = 'Inmobiliario']")).click();
+        adapter.findElementById(("MinPrice")).click();
+        adapter.findElementById(("MinPrice")).sendKeys("10000000");
+        adapter.findElementById(("MaxPrice")).click();
+        adapter.findElementById(("MaxPrice")).sendKeys("200000000");
+        adapter.findCssSelector((".btn-filter")).click();
+        adapter.findCssSelector((".property-item-title > strong")).click();
+    }
+
     public void closeDriver() {
         adapter.closeDriver();
     }
