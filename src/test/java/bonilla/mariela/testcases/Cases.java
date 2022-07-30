@@ -43,7 +43,18 @@ public class Cases
     public void TestCpCartago() throws IOException {
         homePageTest.searchCartago();
     }
-
+    @Test
+    public void TestCpGuanacaste() throws IOException {
+        homePageTest.searchGuanacaste();
+    }
+    @Test
+    public void TestCpPuntarenas() throws IOException {
+        homePageTest.searchPuntarenas();
+    }
+    @Test
+    public void TestCpLimon() throws IOException {
+        homePageTest.searchLimon();
+    }
 
     @AfterMethod
     public void afterTest() {
@@ -52,7 +63,6 @@ public class Cases
     public void afterClass() {
         homePageTest.closeDriver();
     }
-
 
 }
 
