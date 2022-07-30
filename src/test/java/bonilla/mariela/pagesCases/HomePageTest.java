@@ -40,6 +40,8 @@ public class HomePageTest {
     }
 
 
-
+    public void closeDriver() {
+        adapter.closeDriver();
+    }
 
 }
