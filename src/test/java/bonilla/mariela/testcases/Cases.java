@@ -34,6 +34,17 @@ public class Cases
         homePageTest.searchSanJose();
     }
 
+    @Test
+    public void TestCpAlajuela() throws IOException {
+        homePageTest.searchAlajueja();
+    }
+
+    @Test
+    public void TestCpCartago() throws IOException {
+        homePageTest.searchCartago();
+    }
+
+
     @AfterMethod
     public void afterTest() {
     }
