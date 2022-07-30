@@ -6,7 +6,11 @@
         <parameter name="browser" value="Chrome"/>
         <parameter name="url" value="https://www.bnventadebienes.com/Home/HomeFilter"/>
         <classes>
-
+            <class name="bonilla.mariela.testcases.Cases">
+                <methods>
+                    <include name="TestCpSanJose"></include>
+                </methods>
+            </class>
         </classes>
     </test>
 </suite>
