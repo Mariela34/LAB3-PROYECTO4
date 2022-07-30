@@ -18,4 +18,24 @@ public class HomePageTest {
         adapter.openURL(url);
     }
 
+    public void searchSanJose()throws IOException {
+        adapter.findElementById(("ProvinceId")).click();
+        adapter.findElementXpath(("//option[. = 'San José']")).click();
+        adapter.findElementById(("CantonId")).click();
+        adapter.findElementById(("CantonId"));
+        adapter.findElementXpath(("//option[. = 'Acosta']")).click();
+        adapter.findCssSelector((".btn-filter"));
+        adapter.findTagName(("body"));
+        adapter.findElementById(("DistrictId")).click();
+        adapter.findElementById(("PropertyTypeId")).click();
+        adapter.findElementById(("PropertyTypeId"));
+        adapter.findElementXpath(("//option[. = 'Guaitil']")).click();
+        adapter.findElementById(("MinPrice")).click();
+        adapter.findElementById(("MinPrice")).sendKeys("0");
+        adapter.findElementById(("MaxPrice")).click();
+        adapter.findElementById(("MaxPrice")).sendKeys("30000000");
+        adapter.findCssSelector((".btn-filter")).click();
+        adapter.findCssSelector((".property-item-title > strong")).click();
+    }
+
 }
