@@ -10,4 +10,16 @@ import java.time.Duration;
 
 
 public class Adapter {
+    private WebDriver driver = null;
+    private static Adapter adapter = null;
+
+    public Adapter() {
+        // System.setProperty("webdriver.chrome.driver","./chromedriver");
+        System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+        driver = new ChromeDriver();
+        driver.manage().window().maximize();
+        driver.manage().deleteAllCookies();
+
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+    }
 }
