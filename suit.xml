@@ -9,6 +9,8 @@
             <class name="bonilla.mariela.testcases.Cases">
                 <methods>
                     <include name="TestCpSanJose"></include>
+                    <include name="TestCpAlajuela"></include>
+                    <include name="TestCpCartago"></include>
                 </methods>
             </class>
         </classes>
