@@ -11,6 +11,7 @@
                     <include name="TestCpSanJose"></include>
                     <include name="TestCpAlajuela"></include>
                     <include name="TestCpCartago"></include>
+                    <include name="TestCpHeredia"></include>
                     <include name="TestCpGuanacaste"></include>
                     <include name="TestCpPuntarenas"></include>
                     <include name="TestCpLimon"></include>
