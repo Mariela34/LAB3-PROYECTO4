@@ -79,6 +79,28 @@ public class HomePageTest {
         adapter.findCssSelector((".property-item-title > strong")).click();
     }
 
+    public void searchHeredia()throws IOException {
+        adapter.findElementById(("ProvinceId")).click();
+        adapter.findElementXpath(("//option[. = 'Heredia']")).click();
+        adapter.findElementById(("CantonId")).click();
+        adapter.findElementById(("CantonId"));
+        adapter.findElementXpath(("//option[. = 'Santo Domingo']")).click();
+        adapter.findCssSelector((".btn-filter"));
+        adapter.findTagName(("body"));
+        adapter.findElementById(("DistrictId"));
+        adapter.findElementXpath(("//option[. = 'San Vicente']")).click();
+        adapter.findElementById(("PropertyTypeId")).click();
+        adapter.findElementById(("PropertyTypeId"));
+        adapter.findElementXpath(("//option[. = 'Vivienda']")).click();
+        adapter.findElementById(("MinPrice")).click();
+        adapter.findElementById(("MinPrice")).sendKeys("0");
+        adapter.findElementById(("MaxPrice")).click();
+        adapter.findElementById(("MaxPrice")).sendKeys("200000000");
+        adapter.findCssSelector((".btn-filter")).click();
+        adapter.findCssSelector((".property-item-title > strong")).click();
+
+    }
+
     public void searchGuanacaste()throws IOException {
         adapter.findElementById(("ProvinceId")).click();
         adapter.findElementXpath(("//option[. = 'Guanacaste']")).click();
