@@ -43,6 +43,12 @@ public class Cases
     public void TestCpCartago() throws IOException {
         homePageTest.searchCartago();
     }
+
+    @Test
+    public void TestCpHeredia() throws IOException {
+        homePageTest.searchHeredia();
+    }
+
     @Test
     public void TestCpGuanacaste() throws IOException {
         homePageTest.searchGuanacaste();
