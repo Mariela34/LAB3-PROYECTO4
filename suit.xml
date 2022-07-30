@@ -5,6 +5,8 @@
     <test name="Pruebas Busquedas de Bienees">
         <parameter name="browser" value="Chrome"/>
         <parameter name="url" value="https://www.bnventadebienes.com/Home/HomeFilter"/>
+        <classes>
 
+        </classes>
     </test>
 </suite>
