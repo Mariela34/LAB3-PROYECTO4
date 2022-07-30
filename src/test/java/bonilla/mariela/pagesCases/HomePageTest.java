@@ -54,7 +54,7 @@ public class HomePageTest {
         adapter.findElementById(("MinPrice")).click();
         adapter.findElementById(("MinPrice")).sendKeys("0");
         adapter.findElementById(("MaxPrice")).click();
-        adapter.findElementById(("MaxPrice")).sendKeys("6000000000");
+        adapter.findElementById(("MaxPrice")).sendKeys("80000000");
         adapter.findCssSelector((".btn-filter")).click();
         adapter.findCssSelector((".property-item-title > strong")).click();
     }
